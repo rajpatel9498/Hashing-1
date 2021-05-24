@@ -6,11 +6,9 @@ class Solution:
              's':67,'t':71,'u':73,'v':79,'w':83,'x':89,'y':97,'z':101}
         res={}
         for i in strs:
-            print("i={}".format(i))
             r=1
             for j in i:
                 r=r*char_map[j]
-                print("r={}".format(r))
             if r in res:
                 res[r].append(i)
                 print(res)
